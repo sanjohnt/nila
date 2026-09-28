@@ -875,6 +875,7 @@ document.addEventListener('click', function(){
 
     if('IntersectionObserver' in window){
       new IntersectionObserver(function(entries){
+        
         visible = entries[0].isIntersecting;
         play();
       }, { threshold: 0.35 }).observe(slider);
